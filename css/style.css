@@ -1,0 +1,643 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+ html{
+    scroll-behavior: smooth;
+    font-size: 62.5%; 
+} 
+body{
+    background-color: #FFE3C9;
+    overflow-x: hidden; 
+}
+
+
+
+
+/*Index css*/
+nav{
+    background: rgb(103,13,15) ;
+    font-family: "DejaVu Sans";
+    position: sticky;
+    width: 100vw ;
+}
+ 
+    nav ul li a{
+        text-decoration: none;
+        font-size: 2em;
+        color: pink;
+        font-family: "DejaVu Sans";
+    }
+
+    nav ul li a:hover{ 
+                color: #FFCE6F;   
+    }
+    ul li:hover ul{ 
+        display: block;
+        background-color:black;
+}
+
+.nosotros{
+    text-align: center;
+    font-size: 3em ;
+    font-family: "DejaVu Sans";
+    color: #F01945;
+}
+.indexp1{
+    text-align: left;
+    font-size: 1.8em;
+    margin: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.indexImg{
+    width: 95vw;
+    margin: 0.6em;
+    
+}
+.indexImgIcon{
+    width: 10vw;
+}
+.mobileNone{
+   display: none;
+}
+
+.div1{
+    text-align: center;
+    margin: 1em 0;
+    background-color: #F36444;
+}
+.indexP2{
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:  black;
+}
+.footerH2{
+    font-family: "DejaVu Sans";
+    font-size: 2em;
+    color: pink;
+}
+footer{
+    background-color: rgb(103,13,15);
+    text-align: center;    
+}
+footer img{ 
+        width: 3em;
+}
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+/*Productos css*/
+#contenedorProductos{
+          display: grid;
+          grid-template-columns: 1fr 1fr ;
+          column-gap: 0.5em;
+          row-gap: 0.5em;
+
+}
+.productosH1{    
+    text-align: center;
+    font-size: 3em ;
+    font-family: "DejaVu Sans";
+    color: #F01945;
+    margin: 1em 0 ;
+    
+}
+.encabezadoGif{
+    width: 98vw;
+    margin: 1em 0;
+}
+.producImg{
+    width: 47vw;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+
+
+}
+.subProc{
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: black;   
+    margin: 0.2em 0 0.2em 0.8em;
+}
+.precProc{
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: #F36444;
+    margin: 0.5em 0 0.2em 3em;
+}
+.productosH2{
+    font-family: "DejaVu Sans";
+    font-size: 2em;
+    color: pink;
+} 
+
+
+
+
+/*Tortas css*/
+#contenedorTortas{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 0.5em;
+          row-gap: 0.5em;
+
+}
+.tortasH1{    
+    text-align: center;
+    font-size: 3em ;
+    font-family: "DejaVu Sans";
+    color: #F01945;
+    margin: 1em 0 ;
+    
+}
+.tortasImg{
+    width: 47vw;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+.subTor{
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: black;   
+    margin: 0.2em 0 0.2em 0.8em;
+}
+.precTor{
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: #F36444;
+    margin: 0.5em 0 0.2em 3em;
+}
+.tortasH2{
+    font-family: "DejaVu Sans";
+    font-size: 2em;
+    color: pink;
+}
+
+
+
+
+/*magdalenas css*/
+#contenedorMag{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5em;
+        row-gap: 0.5em;
+}
+.magH1{    
+    text-align: center;
+    font-size: 3em ;
+    font-family: "DejaVu Sans";
+    color: #F01945;
+    margin: 1em 0 ;
+    
+}
+.magImg{
+    width: 47vw;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.magdalenasH2{
+    font-family: "DejaVu Sans";
+    font-size: 2em;
+    color: pink;    
+}
+.subMag{
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: black;   
+    margin: 0.2em 0 0.2em 0.8em;
+}
+.precMag{
+    font-size: 1.8em;
+    font-family: "DejaVu Sans";
+    color: #F36444;
+    margin: 0.5em 0 0.2em 3em;
+}
+
+
+/*contactos css*/
+#contenedorContac{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contactanos{
+        margin: 1em 0;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        font-family:"DejaVu Sans";
+        font-size: 3em; 
+}
+
+.contactWrapper > *{
+    padding: 0.5em;
+}
+.contactForm{
+    background-color:  #F01945;
+}
+.contactForm form{
+    font-family: "DejaVu Sans";
+    font-size: 2rem;
+    color: white;
+}
+.contactForm form input,
+.contactForm form textarea,
+.contactForm form button{
+    width: 95vw;
+    margin: 0.8em 0;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 0.2em solid black ;
+    font-size: 1em;
+}
+.contactForm form button{
+    font-size: 1.5em;
+    font-family:"DejaVu Sans";
+    background-color:black;
+    border: none;
+}
+.contactInfo{
+    font-size: 2rem;
+    font-family: "DejaVu Sans";
+    color: white;
+    background-color:black ;
+
+}
+.contactInfo h2{
+    text-align: center;
+    margin: 1em ;
+}
+.contactInfo ul{
+        list-style: none;
+        text-align: center;
+        margin: 0.2em 0;
+}
+
+.contactanosH3{ 
+   font-family: "DejaVu Sans";
+    font-size: 2.5em;
+    color: pink;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*Ayuda css*/
+#contenedorAyuda{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.ayudaH1{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 4em ;
+    font-family: "DejaVu Sans";
+    color: #F01945; 
+}
+.subtAyuda{
+     width: 80vw;
+}
+.subtAyuda ul li{
+    list-style: none;
+}
+
+.question{
+    margin-top: 1em;
+    font-family:"DejaVu Sans";
+    font-size: 2.5em;
+    color:#F36444;
+    padding: 1em ;
+    margin: 1em 0 ;
+    text-align: left;  
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+.textP2{
+    text-align: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;    
+    font-family:"DejaVu Sans";
+    font-size: 2em;
+    color: black;
+}
+.ayudaH2{
+    color: pink;
+    font-family: "DejaVu Sans";
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+/*Desktop css*/
+
+@media screen and (min-width:  780px){
+
+ /*Empieza index*/
+
+#desktop{
+    display: grid;
+    grid-template-areas: 
+    "desk2 desk1";
+    grid-template-columns:2fr 2fr ;
+    grid-gap: none;      
+}
+
+.desk1{
+    grid-area: desk1;
+}
+.desk2{
+    grid-area: desk2;
+}
+    nav ul li{ 
+            text-align: center;
+            list-style: none;
+            margin: 1em 2em;
+                  
+    }
+    nav ul li a{ 
+         text-decoration: none;
+        font-size: 3rem;
+        font-family: "DejaVu Sans";
+    }
+
+    nav ul li a:hover{ 
+                color: white;   
+    }
+
+ul ul{ 
+    position: absolute;
+    display: none;   
+   }
+
+ul ul li{ 
+    display: block;
+     }
+
+ul li:hover ul{ 
+        display: block;
+        background-color:black;
+} 
+
+.indexImg{
+    width: 80%;
+    margin: 3em 0 3em 8em;
+    
+}
+.indexp1{
+    margin:1.5em 8em 3em 0;
+}
+.imgDesk{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+.mobileNone{
+    display: block; /*Permite que no se muestre en mobile*/  
+}
+
+.none{
+    display: none; /*Permite que no se muestre en Desktop*/  
+}
+
+.nosotros{
+    color: rgb(103,13,15);
+    font-size: 4em;
+    font-weight: 600;
+}
+.footerH2{
+    font-size: 3em;
+}
+footer img{
+    width: 3.5em;
+}
+
+
+
+
+/*Empieza productos*/
+
+.productosH1{
+    font-size: 4em;
+}
+.producImg{
+    width: 70%;
+    margin: 2em 0 0 4em;
+}
+
+#contenedorProductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: auto auto;
+    grid-column-gap: 2em;
+}
+
+.subProc{ 
+    margin: 0.2em 0 0.2em 2em;
+}
+.precProc{
+    margin: 0.5em 0 1em 2em;
+}
+.productosH2{
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+/*Empieza tortas*/
+
+#contenedorTortas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto auto auto;
+}
+.tortasH1{    
+    font-size: 4em ;    
+}
+.tortasImg{
+    width: 70%;
+    margin-left: 5em;
+}
+.subTor{
+    font-size: 2em;   
+    margin: 0.2em 0 0.2em 2.5em;
+}
+.precTor{
+    font-size: 2em;
+    margin: 0.5em 0 1em 2.5em;
+}
+.tortasH2{
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+/*Magdalenas*/
+
+#contenedorMag{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto auto;
+}
+.magH1{
+    font-size: 4em;
+}
+.magImg{
+    width: 70%;
+    margin-left: 5em;
+}
+.subMag{
+    font-size: 2em;   
+    margin: 0.2em 0 0.2em 3em;
+}
+.precMag{
+    font-size: 2em;
+    margin: 0.5em 0 1em 3em;
+}
+.magdalenasH2{
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+
+/*Contactanos*/
+
+.contactWrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contactanos{
+        text-transform: uppercase;
+        font-size: 4rem; 
+}
+
+.contenedor{
+       width: 70%;
+       margin: 50px auto;
+       padding: 50px auto;
+}
+.contactWrapper{
+    box-shadow: 0 0 2em 0 black;
+}
+.contactWrapper > *{
+    padding: 2em;
+}
+
+.contactForm form{
+    margin: 0;
+    padding: 10px;
+    font-size: 2rem;
+    
+}
+.contactForm form input,
+.contactForm form textarea,
+.contactForm form button{
+    width: 80%;
+    margin: 1em 0;
+    padding: 0.8em;
+    font-size: 2rem;
+}
+.contactForm p{
+    font-size: 1em;
+}
+
+.contactForm Form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.contactForm form .block{
+   grid-column: 1/3;
+}
+.contactForm form button{
+    font-size: 1.5rem;
+}
+
+.contactInfo{
+    font-size: 1em;
+    padding: 1em;
+
+}
+.contactInfo h2{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 2em;
+}
+.contactInfo ul{
+        font-size: 2em;
+        list-style: none;
+        padding: 1em;
+        text-align: center;
+}
+
+.contactanosH3{ 
+   font-size: 3rem;
+}
+
+
+
+
+
+
+/*Ayuda*/
+
+.ayudaH1{
+    text-transform: uppercase;
+    font-size: 4em; 
+}
+.subtAyuda{
+    width: 80%;
+    height: auto;
+    padding: 2em;
+    margin: 1em auto ;  
+    overflow-y: hidden;
+}
+.question{
+   font-size: 3.7em;
+}
+.textP2{
+    font-size: 2.5em;
+}
+.ayudaH2{
+    font-size: 3em;
+}
+}
