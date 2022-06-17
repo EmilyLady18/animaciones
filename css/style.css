@@ -576,6 +576,13 @@ footer img{
     padding: 0.8em;
     font-size: 2rem;
 }
+.contactForm form button:hover, .contactForm form button:focus {    
+    background: #FFCE6F;     
+    color: black;     
+    transition: background-color 1s ease-out;    
+    outline: 0; 
+}
+
 .contactForm p{
     font-size: 1em;
 }
