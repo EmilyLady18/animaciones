@@ -1,7 +1,5 @@
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     
  }
@@ -18,33 +16,35 @@ body{
 
 
 /*Index css*/
-nav{
+#nav{
+    margin-bottom: 1em;
     background: rgb(103,13,15) ;
-    font-family: "DejaVu Sans";
-    position: sticky;
-    width: 100vw ;
-}
+    }    
  
-    nav ul li a{
+    #nav ul li a{
         text-decoration: none;
         font-size: 2em;
         color: pink;
         font-family: "DejaVu Sans";
     }
-
-    nav ul li a:hover{ 
-                color: #FFCE6F;   
+ 
+    #nav ul li{ 
+        margin: 1em 2em;               
     }
-    ul li:hover ul{ 
-        display: block;
+    #nav ul li:hover ul{ 
         background-color:black;
 }
 
+    
+
 .nosotros{
+    margin-top: 1em;
     text-align: center;
+    font-weight: 600;
     font-size: 3em ;
     font-family: "DejaVu Sans";
     color: #F01945;
+    
 }
 .indexp1{
     text-align: left;
@@ -54,8 +54,8 @@ nav{
     color: black;
 }
 .indexImg{
-    width: 95vw;
-    margin: 0.6em;
+    width: 100vw;
+    margin-top: 0.6em;
     
 }
 .indexImgIcon{
@@ -83,7 +83,8 @@ nav{
 }
 footer{
     background-color: rgb(103,13,15);
-    text-align: center;    
+    text-align: center; 
+    height: 100%;   
 }
 footer img{ 
         width: 3em;
@@ -107,6 +108,7 @@ footer img{
     text-align: center;
     font-size: 3em ;
     font-family: "DejaVu Sans";
+    font-weight: 600;
     color: #F01945;
     margin: 1em 0 ;
     
@@ -155,6 +157,7 @@ footer img{
     text-align: center;
     font-size: 3em ;
     font-family: "DejaVu Sans";
+    font-weight: 600;
     color: #F01945;
     margin: 1em 0 ;
     
@@ -196,6 +199,7 @@ footer img{
     text-align: center;
     font-size: 3em ;
     font-family: "DejaVu Sans";
+    font-weight: 600;
     color: #F01945;
     margin: 1em 0 ;
     
@@ -237,6 +241,7 @@ footer img{
         color: black;
         font-family:"DejaVu Sans";
         font-size: 3em; 
+        font-weight: 600;
 }
 
 .contactWrapper > *{
@@ -310,6 +315,7 @@ footer img{
     text-align: center;
     font-size: 4em ;
     font-family: "DejaVu Sans";
+    font-weight: 600;
     color: #F01945; 
 }
 .subtAyuda{
@@ -365,7 +371,7 @@ footer img{
     grid-template-areas: 
     "desk2 desk1";
     grid-template-columns:2fr 2fr ;
-    grid-gap: none;      
+    grid-column-gap: 3em;      
 }
 
 .desk1{
@@ -374,33 +380,15 @@ footer img{
 .desk2{
     grid-area: desk2;
 }
-    nav ul li{ 
-            text-align: center;
-            list-style: none;
-            margin: 1em 2em;
-                  
-    }
-    nav ul li a{ 
-         text-decoration: none;
+    #nav ul li a{ 
         font-size: 3rem;
-        font-family: "DejaVu Sans";
     }
 
-    nav ul li a:hover{ 
-                color: white;   
+    #nav ul li a:hover{ 
+                color: #FFCE6F;   
     }
 
-ul ul{ 
-    position: absolute;
-    display: none;   
-   }
-
-ul ul li{ 
-    display: block;
-     }
-
-ul li:hover ul{ 
-        display: block;
+    #nav  ul li:hover ul{ 
         background-color:black;
 } 
 
@@ -427,6 +415,7 @@ ul li:hover ul{
 }
 
 .nosotros{
+    text-align: none;
     color: rgb(103,13,15);
     font-size: 4em;
     font-weight: 600;

@@ -5,26 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Amazing Bake increibles horneados -Tortas - Magdalenas </title>
 	<link rel="shortcut icon" href="img/logo.icon.webp">
+	<!-- css bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- mi css-->
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    
     <div id="contenedor">
     	                      	<!-- Empieza el menu -->
-		<nav class="navbar navbar-expand-lg navbar-light ">
+		<nav class="navbar navbar-expand-lg navbar-light" id="nav">
 		    <div class="container-fluid">
 			    <a href="index.html">
 			    <img src="img/logoAB.svg" alt="logo de Amazing Bake">
 				</a>
 
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <button class="navbar-toggler me-auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 			    </button>
 
 			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-			      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 			        <li class="nav-item">
 			          <a class=" active" aria-current="page" href="index.html">Home</a>
 			        </li>
@@ -55,19 +57,27 @@
 
 		<header>
 			      <!--Codigo de bootstrap para carrusel de fotos-->
-         	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img src="img/header1red.webp" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="img/header1pink.webp" class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="img/header1violet.webp" class="d-block w-100" alt="...">
-			    </div>
-			  </div>
-			</div>
+				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+					  	<div class="carousel-item active" data-bs-interval="10000">
+							<img src="img/header1red.webp" class="d-block w-100" alt="Torta redvelvet ,Magdalenas frutos del bosque, Torta redonda de color rosado">
+					  	</div>
+					  	<div class="carousel-item" data-bs-interval="2000">
+							<img src="img/header1pink.webp" class="d-block w-100" alt="Torta de conejito,Magdalena de cereza,Torta corazon rosado">
+					  	</div>
+					  	<div class="carousel-item">
+							<img src="img/header1violet.webp" class="d-block w-100" alt="Torta de mariposas, Magdalenas de frambuesa, Torta aesthetic violeta">
+					  	</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 		</header>
 
 	    <div class="mobileNone"> <!-- Solo va a parecer en desktop -->
